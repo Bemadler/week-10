@@ -1,0 +1,25 @@
+.slider{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    height: 90%;
+    background-color: darkolivegreen;
+}
+.img-box{
+    width:100%;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.btn{
+    border-color: chocolate;
+    outline:none;
+    padding: 10px 30px;
+    font-size:20px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.btn:hover{
+    background: yellowgreen;
+}
