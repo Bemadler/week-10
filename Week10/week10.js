@@ -43,7 +43,7 @@ let width = 6;
 let height = 4;
 let S = width * height;
 function calculateArea(width, height) {
-	console.log(S)
+	return S
 }
 console.log(calculateArea(width, height));
 
@@ -51,10 +51,10 @@ console.log(calculateArea(width, height));
 // Напишите функцию printMessage(), которая принимает один параметр message и выводит его в консоль. Если параметр не передан, используйте значение по умолчанию: "Сообщение отсутствует".
 
 //let message = "Приветики!";
-function printMessage(message){
-message('Сообщение отсутствует');
-};
-console.log(printMessage);
+
+function printMessage(message = 'Сообщение отсутствует') {
+	console.log(message);
+}
 //Задание 7
 // Напишите функцию secondFunction, которая принимает два параметра: c и d, и выводит в консоль их сумму. Если значения параметров не переданы, используйте значения по умолчанию: c = 5 и d = 10.
 let c = 5;
@@ -93,9 +93,9 @@ function greetGuest(guestName){
 //Задание 10
 // Создайте функцию calculateDifference с помощью Function Expression и правильно используйте её, чтобы вычесть два числа и вывести результат в консоль.
 // Ваш код
-let calculateDifference = function(){
-	return a - b;
-}
+let calculateDifference = function (a, b) {
+    return a - b;
+};
 const result = calculateDifference(5, 3);
 
 console.log(result); //Выведет 2
@@ -130,9 +130,12 @@ let cat = "cat";
 let rabbit = "rabbit";
 function findAnimal(){
 	const cat = "kitty"
+	const rabbit = "rabby"
 	console.log(cat);
+	console.log(rabbit);
 }
 console.log(rabbit)
+console.log(cat);
 //Задание 15
 // Допишите программу, которая вычисляет сколько лет прошло с летней олимпиады в Токио, Япония. Подсказка: 1. нужно создать переменную с текущим годом. 2. при вызове функции в круглые скобки нужно передать два параметра: текущий год и год летней олимпиады в Токио.
 const lastOlympicsYear = 2021;
@@ -165,7 +168,8 @@ console.log('I am ' + age ( actuallYear,year) + ' years old');
 //Задание 18
 // Напишите функцию, которая должна возводить число в заданную степень. Результат должен выводить в консоль в формате: console.log("Результат: " + result);
 
-function squiredNumber(a, b){
-	let result = a**b;
-};
-console.log("Результат:" + 3**3);
+function squiredNumber(a, b) {
+    let result = a ** b;
+    console.log("Результат: " + result);
+}
+squiredNumber(3, 3);  // должно вывести "Результат: 27"
